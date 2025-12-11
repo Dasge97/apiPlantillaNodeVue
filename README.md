@@ -22,22 +22,6 @@ Plantilla base para construir APIs con Node.js + Express, preparada para conecta
 apiPlantillaNodeVue es un esqueleto simple y funcional para kickstart de APIs con Node.js.
 Incluye estructura organizada, dependencias esenciales y una base sobre la que construir endpoints y lógica backend.
 
-## Estructura del proyecto
-apiPlantillaNodeVue/
-│
-├── src/
-│   ├── routes/        # Definición de rutas
-│   ├── controllers/   # Lógica de negocio
-│   ├── middlewares/   # Middlewares personalizados
-│   ├── config/        # Configuración global
-│   └── app.js         # Punto de entrada de la API
-│
-├── node_modules/
-├── .gitignore
-├── package.json
-├── README.md
-└── .env.example
-
 
 ## Tecnologías utilizadas
 - Node.js 18+
@@ -56,15 +40,6 @@ apiPlantillaNodeVue/
 npm start  
 npm run dev
 
-## Endpoints básicos
-GET /
-Retorna un mensaje de prueba.
-
-## Próximas mejoras
-- Controladores
-- BD
-- Docker
-- Tests
 
 ## Contribución
 Fork + PR
