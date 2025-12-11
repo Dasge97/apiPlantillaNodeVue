@@ -26,17 +26,18 @@ Incluye estructura organizada, dependencias esenciales y una base sobre la que c
 apiPlantillaNodeVue/
 │
 ├── src/
-│   ├── routes/
-│   ├── controllers/
-│   ├── middlewares/
-│   ├── config/
-│   └── app.js
+│   ├── routes/        # Definición de rutas
+│   ├── controllers/   # Lógica de negocio
+│   ├── middlewares/   # Middlewares personalizados
+│   ├── config/        # Configuración global
+│   └── app.js         # Punto de entrada de la API
 │
 ├── node_modules/
 ├── .gitignore
 ├── package.json
 ├── README.md
 └── .env.example
+
 
 ## Tecnologías utilizadas
 - Node.js 18+
