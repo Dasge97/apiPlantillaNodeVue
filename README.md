@@ -8,20 +8,16 @@ Plantilla base para construir APIs con Node.js + Express, preparada para conecta
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
 ## Tabla de contenidos
-- 🚀 Descripción
-- 📂 Estructura del proyecto
-- 🛠️ Tecnologías utilizadas
-- ⚙️ Instalación y uso
-- 🔌 Scripts disponibles
-- 🌐 Endpoints básicos
-- ✨ Próximas mejoras
-- 🤝 Contribución
-- 📄 Licencia
+-  Descripción
+-  Tecnologías utilizadas
+-  Instalación y uso
+-  Scripts disponibles
+-  Contribución
+-  Licencia
 
 ## Descripción
 apiPlantillaNodeVue es un esqueleto simple y funcional para kickstart de APIs con Node.js.
 Incluye estructura organizada, dependencias esenciales y una base sobre la que construir endpoints y lógica backend.
-
 
 ## Tecnologías utilizadas
 - Node.js 18+
@@ -39,7 +35,6 @@ Incluye estructura organizada, dependencias esenciales y una base sobre la que c
 ## Scripts disponibles
 npm start  
 npm run dev
-
 
 ## Contribución
 Fork + PR
