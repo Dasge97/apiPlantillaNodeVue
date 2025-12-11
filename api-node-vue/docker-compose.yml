@@ -1,0 +1,54 @@
+version: "3.9"
+
+services:
+  # ============================
+  # BASE DE DATOS (MySQL)
+  # ============================
+  mysql:
+    image: mysql:8.0
+    container_name: plantilla_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: app_db
+      MYSQL_USER: app_user
+      MYSQL_PASSWORD: app_pass
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./db/init:/docker-entrypoint-initdb.d
+    networks:
+      - internal
+
+  # ============================
+  # BACKEND (Node.js API)
+  # ============================
+  backend:
+    container_name: plantilla_backend
+    build: ./backend      # Carpeta donde tienes tu Dockerfile
+    restart: unless-stopped
+    environment:
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_USER: app_user
+      DB_PASS: app_pass
+      DB_NAME: app_db
+    depends_on:
+      - mysql
+    ports:
+      - "3000:3000"
+    networks:
+      - internal
+
+# ============================
+# VOLUMENES PERSISTENTES
+# ============================
+volumes:
+  mysql_data:
+
+# ============================
+# REDES
+# ============================
+networks:
+  internal:
+
